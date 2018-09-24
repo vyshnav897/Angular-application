@@ -1,0 +1,50 @@
+<app-header> </app-header>
+<div class="app-list-child">
+    <form [formGroup]="searchForm">
+        <div class="form-group">
+            <input type="text" formControlName="search" class="form-control" placeholder="Search Users" />
+        </div>
+    </form>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th class="table-header">
+                Profile Image
+            </th>
+            <th class="table-header">
+                ID
+            </th>
+            <th class="table-header">
+                First Name
+            </th>
+            <th class="table-header">
+                Last Name
+            </th>
+            <th class="table-header">
+                Address
+            </th>
+
+            <th class="table-header">
+                Amount
+            </th>
+        </tr>
+    </thead>
+
+    <tr *ngFor="let char of items" class="table-link" (click)="rowClick(char)">
+        <td> <img src={{char.image_url}} /> </td>
+        <td> {{char.id }} </td>
+        <td>
+            {{char.firstname }}
+        </td>
+        <td>
+            {{char.lastname }}
+        </td>
+        <td>
+            {{char.address | prettyprint }}
+        </td>
+        <td>
+            {{char.order_total | CustomCurrency }}
+        </td>
+    </tr>
+</table>

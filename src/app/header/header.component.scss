@@ -1,0 +1,18 @@
+.cr-header-parent {
+    height: 50px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    display: table;
+    z-index: 100;
+}
+
+.cr-header-span {
+    float: right;
+    padding: 13px;
+    span {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}

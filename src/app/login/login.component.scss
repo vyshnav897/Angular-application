@@ -1,0 +1,43 @@
+.app-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+    .app-child {
+        padding: 100px;
+        background: cadetblue;
+    }
+    .form-group {
+        margin-top: 5px;
+        .form-control {
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+        }
+    }
+    .btn-primary {
+        cursor: pointer;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        margin-top: 10px;
+    }
+}

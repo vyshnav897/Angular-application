@@ -1,0 +1,43 @@
+table th,
+table thead {
+    background-color: #c2daf2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    padding: .75rem 0 .75rem 1rem;
+    text-align: left;
+}
+
+tbody>tr:nth-of-type(odd) {
+    background-color: #eef5fc;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.table-link {
+    cursor: pointer;
+}
+
+.app-list-child {
+    margin: 10px 5px 10px 10px;
+    float: right;
+    .form-control {
+        background: none;
+        border: 0;
+        border-bottom: 1px solid #8ab28a;
+        font-family: Lato, sans-serif;
+        font-size: .875rem;
+        font-weight: 400;
+        color: #323332;
+        outline: none;
+        padding: 0 10px 5px 10px;
+    }
+}
